@@ -41,30 +41,30 @@ int T = 2;
 
 void setGoal_CallBack( const move_robot::NewGoal& new_goal) {
 
-		if (cruising==0) {  // <-- gestione della concorrenza (controllo che le coordinate vengano lette solo se il robot è fermo)
-        new_goal_msg.header.seq = n;
-        n++;
+	if (cruising==0) {  //le coordinate vengono lette solo se robot fermo
+        	new_goal_msg.header.seq = n;
+        	n++;
 
-        new_goal_msg.header.stamp = ros::Time::now();
-        new_goal_msg.header.frame_id = "map";
+        	new_goal_msg.header.stamp = ros::Time::now();
+        	new_goal_msg.header.frame_id = "map";
+	
+        	new_goal_msg.pose.position.x = new_goal.x;
+       		new_goal_msg.pose.position.y = new_goal.y;
+        	new_goal_msg.pose.position.z = 0;
 
-        new_goal_msg.pose.position.x = new_goal.x;
-        new_goal_msg.pose.position.y = new_goal.y;
-        new_goal_msg.pose.position.z = 0;
+        	new_goal_msg.pose.orientation.x = 0;
+        	new_goal_msg.pose.orientation.y = 0;
+        	new_goal_msg.pose.orientation.z = 0;
+        	new_goal_msg.pose.orientation.w = new_goal.theta;
 
-        new_goal_msg.pose.orientation.x = 0;
-        new_goal_msg.pose.orientation.y = 0;
-        new_goal_msg.pose.orientation.z = 0;
-        new_goal_msg.pose.orientation.w = new_goal.theta;
+       		message_published = 1;
+        	cruising = 1;
 
-        message_published = 1;
-        cruising = 1;
+        	//POSA GOAL
+        	target_position[0] = new_goal_msg.pose.position.x;
+        	target_position[1] = new_goal_msg.pose.position.y;
 
-        //POSA GOAL
-        target_position[0] = new_goal_msg.pose.position.x;
-        target_position[1] = new_goal_msg.pose.position.y;
-
-        ROS_INFO("SETTO IL GOAL");
+        	ROS_INFO("SETTO IL GOAL");
     }
 
 }
