@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="index.js"type="text/javascript" lang="javascript" ></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <title> Pick and Delivery Robot</title>
+    </head>
+    <body>
+        <img src="am.png" id="sfondo"></img>
+        <section id="main">
+            <div id="utente"></div>
+            <h1 id="titolo1">  </h1> 
+            <h3 id='stanza-log'></h3>
+            <h2 id="titolo2">  </h2> 
+            <form action="" class ="form-signin" method="POST" name="myForm" id="form-id">
+                <h3> Accedere con nome e cognome </h3>
+                    <table>
+                        <tr>
+                            <th> <input type="text" name="name" placeholder="name" id="name"/></th>
+                            <th> <input type="text" name="surname" placeholder="surname" id="surname"/></th>
+                        </tr>
+                    </table>
+                <h3> stanza d'accesso: </h3> 
+                <table>
+                    <tr>
+                        <th><label> aula1 <input type="checkbox" name="stanza" value="aula1" /> </label> </th> 
+                        <th><label> aula2 <input type="checkbox" name="stanza" value="aula2" /> </label> </th> 
+                    </tr>
+                    <tr>
+                        <th><label> aula3 <input type="checkbox" name="stanza" value="aula3" /> </label> </th> 
+                    <th><label> aula4 <input type="checkbox" name="stanza" value="aula4" /> </label> </th> 
+                    </tr>
+                    <tr>
+                        <th><label> aula5 <input type="checkbox" name="stanza" value="aula5" /> </label> </th> 
+                        <th><label> aula6 <input type="checkbox" name="stanza" value="aula6" /> </label> </th> 
+                    </tr>
+                    <tr>
+                        <th><label> aula7 <input type="checkbox" name="stanza" value="aula7" /> </label> </th> 
+                        <th><label> aula_magna <input type="checkbox" name="stanza" value="aula_magna" /> </label> </th> 
+                    </tr>
+                </table>
+                <br>
+                <button type="button" onclick="Accedi()"> Accedi </button>
+            </form>
+            <div id="consegna">
+                <div id="azione-robot">
+                    <button type="button" onclick="richiamaRobot()"> Chiama il ROBOT </button>
+                    <span id="attesa" ><h3> Immetti il pacco sul ROBOT e seleziona la destinazione del pacco da spedire:</h3></span>
+                </div>
+                <table>
+                    <tr>
+                        <th><label> aula1 <input type="checkbox" name="stanza2" value="aula1" /> </label> </th> 
+                        <th><label> aula2 <input type="checkbox" name="stanza2" value="aula2" /> </label> </th> 
+                    </tr>
+                    <tr>
+                        <th><label> aula3 <input type="checkbox" name="stanza2" value="aula3" /> </label> </th> 
+                    <th><label> aula4 <input type="checkbox" name="stanza2" value="aula4" /> </label> </th> 
+                    </tr>
+                    <tr>
+                        <th><label> aula5 <input type="checkbox" name="stanza2" value="aula5" /> </label> </th> 
+                        <th><label> aula6 <input type="checkbox" name="stanza2" value="aula6" /> </label> </th> 
+                    </tr>
+                    <tr>
+                        <th><label> aula7 <input type="checkbox" name="stanza2" value="aula7" /> </label> </th> 
+                        <th><label> aula_magna <input type="checkbox" name="stanza2" value="aula_magna" /> </label> </th> 
+                    </tr>
+                </table>
+                <br>
+                <button type="button" onclick="Spedisci()" > Spedisci </button>
+                <span id="transito"> </span>
+            </div>
+            <h2>  </h2>
+        </section>
+    </body>
+</html>
+
+
+

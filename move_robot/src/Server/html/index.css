@@ -1,0 +1,91 @@
+body {
+    background-color:rgb(255, 255, 255);
+}
+
+#sfondo {
+    height:100%;
+    width:100%;
+    opacity:2;
+    background-size: cover;
+    position: fixed;
+}
+
+#main { 
+    margin:auto;
+    top:0%;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 2px 4px 4px 0px black;
+    padding:100px;
+    background-color:rgba(0, 0, 0, 0.703);
+    /*border-radius: 10px;*/
+    height: auto;
+}
+
+#stanza-log {
+    display:none;
+    text-align: center;
+}
+
+.form-signin {
+    text-align: center;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+h1,h2 {
+    text-align: center;
+    color: rgb(0, 255, 0);
+    text-shadow: 2px 2px 4px;
+    font-weight:300;
+}
+
+h3 {
+    color:white;
+}
+
+label {
+    color:white;
+    float:left;
+}
+
+table {
+    margin:auto;
+}
+
+button {
+    padding:5px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#mappa {
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom:2%;
+    opacity: 0.9;
+}
+
+#consegna {
+    text-align: center;
+    margin:auto;
+    padding-bottom:50px;
+    display:none;
+}
+
+#utente {
+    display:none;
+    position: absolute;
+    top:0px;
+    right:20px;
+    font-size:16px;
+    color: white;
+}
