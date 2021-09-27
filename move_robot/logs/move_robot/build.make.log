@@ -1,0 +1,14 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _move_robot_generate_messages_check_deps_NewGoal
+[  9%] Built target move_robot_generate_messages_lisp
+[ 36%] Built target move_robot_generate_messages_py
+[ 36%] Built target move_robot_generate_messages_nodejs
+[ 45%] Built target move_robot_generate_messages_cpp
+[ 63%] Built target move_robot_generate_messages_eus
+[ 81%] Built target sender
+[100%] Built target move
+[100%] Built target move_robot_generate_messages

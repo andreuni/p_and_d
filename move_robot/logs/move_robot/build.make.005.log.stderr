@@ -1,0 +1,14 @@
+[01m[K/home/andrea/Desktop/gg/progetto/src/move_robot/src/sender.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Kmove_robot/NewGoal.h: File o directory non esistente
+ #include [01;31m[K<move_robot/NewGoal.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/sender.dir/src/sender.cpp.o] Error 1
+make[1]: *** [CMakeFiles/sender.dir/all] Error 2
+make[1]: *** Attesa per i processi non terminati....
+[01m[K/home/andrea/Desktop/gg/progetto/src/move_robot/src/move.cpp:18:10:[m[K [01;31m[Kfatal error: [m[Kmove_robot/NewGoal.h: File o directory non esistente
+ #include [01;31m[K<move_robot/NewGoal.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/move.dir/src/move.cpp.o] Error 1
+make[1]: *** [CMakeFiles/move.dir/all] Error 2
+make: *** [all] Error 2
